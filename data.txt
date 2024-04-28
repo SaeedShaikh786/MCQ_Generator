@@ -1,0 +1,16 @@
+What Is Artificial Intelligence?
+Artificial Intelligence is the field of developing computers and robots that are capable of behaving in ways that both mimic and go beyond human capabilities. AI-enabled programs can analyze and contextualize data to provide information or automatically trigger actions without human interference.
+
+Today, artificial intelligence is at the heart of many technologies we use, including smart devices and voice assistants such as Siri on Apple devices. Companies are incorporating techniques such as natural language processing and computer vision — the ability for computers to use human language and interpret images ­— to automate tasks, accelerate decision making, and enable customer conversations with chatbots.
+
+What Is Machine Learning?
+Machine learning is a pathway to artificial intelligence. This subcategory of AI uses algorithms to automatically learn insights and recognize patterns from data, applying that learning to make increasingly better decisions.
+
+By studying and experimenting with machine learning, programmers test the limits of how much they can improve the perception, cognition, and action of a computer system.
+
+Deep learning, an advanced method of machine learning, goes a step further. Deep learning models use large neural networks — networks that function like a human brain to logically analyze data — to learn complex patterns and make predictions independent of human input.
+
+How Companies Use AI and Machine Learning
+To be successful in nearly any industry, organizations must be able to transform their data into actionable insight. Artificial Intelligence and machine learning give organizations the advantage of automating a variety of manual processes involving data and decision making.
+
+By incorporating AI and machine learning into their systems and strategic plans, leaders can understand and act on data-driven insights with greater speed and efficiency.

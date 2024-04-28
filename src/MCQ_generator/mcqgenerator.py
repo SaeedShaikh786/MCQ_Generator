@@ -2,7 +2,6 @@ import pandas as pd
 import os
 import sys
 from dotenv import load_dotenv 
-from src.MCQ_generator.utils import read_file,get_table_data
 from src.MCQ_generator.logger import logging 
 from src.MCQ_generator.exception import CustomException
 
@@ -100,12 +99,13 @@ try :
     # input for quiz chain
     input_variables=["text","number","subject","tone","response_json"],
     # output var for review chain
-    output_variables=["quiz","review"]
+    output_variables=["quiz","Review"]
 )
     
 except Exception as e:
     logging.info("Error occurred while Setting up a SequentialChain instance")
     raise CustomException(e,sys)
+
 
 
 
