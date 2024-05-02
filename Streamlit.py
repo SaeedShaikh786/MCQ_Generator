@@ -3,7 +3,7 @@ import json
 import traceback
 import pandas as pd
 from dotenv import load_dotenv
-from mcqgenrator.utils import read_file,get_table_data
+from MCQ_Generator.utils import read_file,get_table_data
 import streamlit as st
 from langchain.callbacks import get_openai_callback
 from MCQ_Generator.mcqgenerator import generate_evaluate_chain
