@@ -11,7 +11,7 @@ from src.MCQ_generator.logger import logging
 
 #loading json file
 
-with open("/workspaces/MCQ_Generator/Response.json","r") as file:
+with open("/MCQ_Generator/Response.json","r") as file:
     RESPONSE_JSON=json.load(file)
 
 # Creating a Title For APP Streamlit.py
