@@ -41,6 +41,11 @@ def read_file(file):
     
 
 
+
+
+import json
+import traceback
+
 def get_table_data(quiz_str):
     """
     Extracts table data from a quiz string.
@@ -52,28 +57,25 @@ def get_table_data(quiz_str):
     - list: A list of dictionaries containing table data for each MCQ
     """
     try:
-        # convert the quiz from a string to a dictionary
         quiz_dict = json.loads(quiz_str)
         quiz_table_data = []
 
-        # iterate over the quiz dictionary and extract the required information
-        for key,value in quiz_dict.items():
-            mcq = value["mcq"]
-            options = " || ".join(
-                [
-                    f"{option}-> {option_value}" for option,option_value in value["options"].items()
-                ]
-            )
-
-            correct = value["correct"]
-            quiz_table_data.append(
-                {"MCQ":mcq,
-                 "Choice":options,
-                 "Correct":correct
-                 })
+        for key, value in quiz_dict.items():
+            mcq = value.get("mcq", "")
+            options = " || ".join([
+                f"{option}-> {option_value}" for option, option_value in value.get("options", {}).items()
+            ])
+            correct = value.get("correct", "")
+            quiz_table_data.append({
+                "MCQ": mcq,
+                "Choice": options,
+                "Correct": correct
+            })
+        
         return quiz_table_data
-    
-    except Exception as e:
-        traceback.print_exception(type(e),e,e.__traceback__)
-        return False
+    except json.JSONDecodeError as e:
+        print(f"Error decoding JSON: {e}")
+        return None
+
+
     
