@@ -22,7 +22,7 @@ def read_file(file):
     if file.name.endswith('.pdf'):
         try:
             # If the file is a PDF, use PyPDF2 to extract text from each page
-            pdf_reader = PyPDF2.PdfFileReader(file)
+            pdf_reader = PyPDF2.PdfReader(file)
             text = ""
             for page in pdf_reader.pages:
                 text += page.extract_text()
