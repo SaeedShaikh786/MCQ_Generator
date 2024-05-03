@@ -7,7 +7,8 @@ import streamlit as st
 from src.MCQ_generator.logger import logging
 from src.MCQ_generator.utils import read_file, get_table_data
 
-with open("/workspaces/MCQ_Generator/Response.json", "r") as file:
+## changin the path for EC2
+with open("Response.json", "r") as file:
     RESPONSE_JSON = json.load(file)
 
 # Creating a Title For APP Streamlit.py
