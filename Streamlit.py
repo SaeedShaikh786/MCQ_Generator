@@ -53,7 +53,8 @@ with st.form("user_input"):
             else:
                 if isinstance(response, dict):
                     # Extract the quiz data from response
-                    quiz = response.get('quiz', None)
+                    quiz=response["quiz"].split("\n")[1]
+                    # quiz = response.get('quiz', None)
                     if quiz is not None:
                         table_data = get_table_data(quiz)
                         if table_data is not None:
