@@ -6,6 +6,8 @@ import PyPDF2
 import streamlit as st
 from src.MCQ_generator.logger import logging
 from src.MCQ_generator.utils import read_file, get_table_data
+from src.MCQ_generator.mcqgenerator import generate_evaluate_chain
+
 
 ## changin the path for EC2
 with open("Response.json", "r") as file:
