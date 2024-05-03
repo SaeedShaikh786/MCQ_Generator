@@ -16,7 +16,7 @@ from langchain.chains import SequentialChain
 load_dotenv()
 
 # Access the environment variables just like you would with os.environ
-KEY=os.getenv("API_KEY")
+KEY=os.getenv("GOOGLE_API_KEY")
 
 ## google gemini model 
 llm = ChatGoogleGenerativeAI(model="gemini-pro",
